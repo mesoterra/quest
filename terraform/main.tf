@@ -18,7 +18,7 @@ resource "aws_network_interface" "quest_dockerparent" {
 }
 
 data "aws_ami" "os_ami" {
-  name_regex = "^amzn2-ami-kernel-[5-9]\.[0-9]{1,2}-*"
+  name_regex = "^amzn2-ami-kernel-[5-9].[0-9]{1,2}-*"
   most_recent = true
   owners = ["137112412989"]
   filter {
